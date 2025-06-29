@@ -10,7 +10,7 @@ from textwrap import dedent
 import plotly.graph_objects as go
 
 
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.LUMEN, dbc.icons.FONT_AWESOME])
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.LUMEN, dbc.icons.FONT_AWESOME], requests_pathname_prefix='/dash_sli/' )
 server = app.server
 
 cabecalho = html.H1("Modelo SIL",className="bg-primary text-white p-2 mb-4")
