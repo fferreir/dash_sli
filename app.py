@@ -18,7 +18,7 @@ cabecalho = html.H1("Modelo SIL",className="bg-primary text-white p-2 mb-4")
 descricao = dcc.Markdown(
     '''
     É apresentado o modelo para a dinâmica populacional de raiva em raposas na Europa
-    [Anderson et al., Nature, vol. 289, pp. 765-771 (1981)]. Fez-se a suposição de que
+    [Anderson et al., Nature, vol. 289, pp. 765-771 (1981)](https://www.nature.com/articles/289765a0). Fez-se a suposição de que
     os indivíduos da população podem ser classificados como suscetíveis ($$S$$), infectados
     que ainda não são infecciosos ($$L$$, referindo-se à latência), e infecciosos ($$I$$).
     ''', mathjax=True
