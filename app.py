@@ -9,10 +9,10 @@ from textwrap import dedent
 import plotly.graph_objects as go
 
 
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.LUMEN, dbc.icons.FONT_AWESOME], requests_pathname_prefix='/dash_sir/')
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.LUMEN, dbc.icons.FONT_AWESOME], requests_pathname_prefix='/dash_sli/')
 server = app.server
 
-cabecalho = html.H1("Modelo SIL",className="bg-primary text-white p-2 mb-4")
+cabecalho = html.H1("Modelo SLI",className="bg-primary text-white p-2 mb-4")
 
 descricao = dcc.Markdown(
     '''
@@ -85,7 +85,7 @@ ajuste_condicoes_iniciais = html.Div(
             html.Div(
                 [
                     dbc.Label(dcc.Markdown('''$$S$$ total de suscetíveis''', mathjax=True), html_for="s_init"),
-                    dcc.Slider(id="s_init", min=0.1, max=5, value=2.5, tooltip={"placement": "bottom", "always_visible": False}),
+                    dcc.Slider(id="s_init", min=0.1, max=5, value=2.0, tooltip={"placement": "bottom", "always_visible": False}),
                 ],
                 className="m-2",
             ),
